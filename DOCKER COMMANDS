@@ -1,0 +1,27 @@
+# SlProjectRepo
+
+To start Docker
+===================
+sudo -i
+apt-get update
+
+sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+======================
+docker images
+cd /home
+pwd
+ls
+cd docker
+ls
+cd java
+ls
+cd spring-boot-websocket-chat-demo/
+ls
+mvn clean package
+vi Dockerfile
+:q-come out of vim
+docker images
+docker run -p 5000:8080 sptingimage
+
+
+ docker run -d -p 5000:8080 --name mynewcontainer1 demoimage
