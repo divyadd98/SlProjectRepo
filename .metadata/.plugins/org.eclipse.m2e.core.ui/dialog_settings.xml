@@ -49,12 +49,15 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="TestNG.TestNG"/>
 			<item value="test.test"/>
 		</list>
 		<list key="groupId">
+			<item value="TestNG"/>
 			<item value="test"/>
 		</list>
 		<list key="artifactId">
+			<item value="TestNG"/>
 			<item value="test"/>
 		</list>
 		<list key="projectNameTemplate">

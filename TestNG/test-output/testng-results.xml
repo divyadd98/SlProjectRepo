@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="4" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="MySuite" duration-ms="66" started-at="2021-03-07T10:25:48 UTC" finished-at="2021-03-07T10:25:48 UTC">
+    <groups>
+      <group name="Sanity">
+        <method signature="Test1.method1()[pri:0, instance:test.Test1@23e028a9]" name="method1" class="test.Test1"/>
+        <method signature="Test2.method2()[pri:0, instance:test.Test2@3dd4520b]" name="method2" class="test.Test2"/>
+      </group> <!-- Sanity -->
+    </groups>
+    <test name="LoginTest" duration-ms="66" started-at="2021-03-07T10:25:48 UTC" finished-at="2021-03-07T10:25:48 UTC">
+      <class name="test.Test2">
+        <test-method status="PASS" signature="method2()[pri:0, instance:test.Test2@3dd4520b]" name="method2" duration-ms="1" started-at="2021-03-07T10:25:48 UTC" finished-at="2021-03-07T10:25:48 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method2 -->
+      </class> <!-- test.Test2 -->
+      <class name="test.Test1">
+        <test-method status="PASS" signature="method1()[pri:0, instance:test.Test1@23e028a9]" name="method1" duration-ms="9" started-at="2021-03-07T10:25:48 UTC" finished-at="2021-03-07T10:25:48 UTC">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- method1 -->
+      </class> <!-- test.Test1 -->
+    </test> <!-- LoginTest -->
+  </suite> <!-- MySuite -->
+</testng-results>
