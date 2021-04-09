@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+          margin-top: 50px;
+          margin-left: 180px;
+          
+        }
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        
+        
+        input[type=text], input[type=password],input[type=email] {
+          width: 100%;
+          padding: 15px;
+          border-radius: 10px;
+          margin: 5px 0 22px 0;
+          display: inline-block;
+          border: none;
+          background: #f1f1f1;
+        }
+        
+        .button {
+            
+          background-color:rgb(55, 102, 231);
+          border-radius: 10px;
+          color: white;
+          padding: 15px 32px;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          font-size: 16px;
+          margin: 4px 2px;
+          cursor: pointer;
+        }
+        
+        .container1 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 #267cec;
+        }
+        .container {
+         
+          background-color:#e6e6e6;
+          padding: 5px;
+          
+        }
+        </style>
+    
+</head>
+<body>
+    
+    <div class="main-content">
+    <div class="container1">
+    <div class="container">
+        <h1>Login</h1>
+        <hr>
+        <form>
+            <input type="text" name="email" placeholder="Email" [(ngModel)]="cust.email"/><br><br>
+            <input type="password" name="password" placeholder="Password" [(ngModel)]="cust.password" /><br><br>
+            <button class="button" (click)="postdept()">Sign In</button>
+    </form>
+    </div>
+    </div>
+</div>
+</body>
+</html>

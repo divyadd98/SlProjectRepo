@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 80px;
+  margin-left: 250px;
+  margin-right: 250px;
+}
+
+* {
+  box-sizing: border-box;
+}
+h1{
+  color: rgb(41, 67, 184);
+}
+
+
+
+input[type=text], input[type=password], input[type=date], input[type=tel], select, input[type=email] {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: white;
+}
+
+.button {
+    
+  background-color:white;
+  border-radius: 10px;
+  color: rgb(41, 67, 184);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+.button:hover{
+  color: rgb(41, 67, 184);
+    background-color: white;
+    box-shadow: 0 5px 10px rgba(0,0,0,0.25), 
+    0 3px 3px rgba(0,0,0,0.22);
+}
+.container1 {
+    box-shadow: 0 7px 14px rgba(0,0,0,0.25), 
+    0 5px 5px rgba(0,0,0,0.22);
+}
+.container {
+ 
+  background-color:rgb(240, 238, 238);
+  padding: 10px;
+  
+}
+
+
+
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="container1">
+
+<div class="container">
+  <div style="text-align:center">
+    <h1>Register</h1>
+    <hr>
+  </div>
+  <div class="row">
+    <div class="column">
+        <div class="container">
+        <input type="text" name="customer_name" placeholder="Name" [(ngModel)]="cust.customer_name" required /><br>
+        <input type="tel" name="mobile_no" placeholder="Mobile No" [(ngModel)]="cust.mobile_no" /><br>
+        <select name="gender" [(ngModel)]="cust.gender">
+        <option>Male</option>
+        <option>Female</option>
+        <option>Other</option>
+        </select>                      
+        <br><input type="email" name="email" placeholder="Email" [(ngModel)]="cust.email" /><br>
+        <input type="password" name="password" placeholder="Password" [(ngModel)]="cust.password"/>
+        <input class="dob" type="date"  name="dob" [(ngModel)]="cust.dob" /><br>
+        <button class="button" (click)="postdept()">Sign up</button>
+        </div>
+    </div>
+    <div class="column">
+      <form>
+        <div class="container"> 
+         <input type="text" name="address"  placeholder="Address" [(ngModel)]="cust.address" /><br>
+          <select name="city" [(ngModel)]="cust.city">
+         <option>Chennai</option>
+         <option>Bangalore</option>
+         <option>Mumbai</option>
+         <option>Pune</option>
+         <option>Hyderabad</option>
+         </select><br>
+          <select name="state" [(ngModel)]="cust.state">
+         <option>Tamil Nadu</option>
+         <option>Karnataka</option>
+         <option>Maharashtra</option>
+         </select><br>
+          <select name="country" [(ngModel)]="cust.country">
+         <option>India</option>
+         <option>Other</option>
+         </select><br>
+         <input type="tel" name="aaadhar_no" placeholder="Aadhar No" [(ngModel)]="cust.aaadhar_no" /><br>
+         <input type="text" name="pan_no" placeholder="Pancard No" [(ngModel)]="cust.pan_no" /><br><br>
+         
+         </div>
+      </form>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
